@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulaulombokID</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="warp">
+            <ul class="menu">
+                <li class="logo"><a href="#">PulaulombokID</a></li>
+                <li class="item"><a href="#">Beranda</a></li>
+                <li class="item"><a href="#">Tentang</a></li>
+                <li class="item"><a href="#">Layanan</a></li>
+                <li class="item"><a href="#">Fitur</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#">Kontak</a></li>
+                <li class="item button secondary"><a href="#">Masuk</a></li>
+                <li class="item button"><a href="#">Daftar</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="big-img">
+            <div class="warp">
+                <h1>Pulau Lombok Indonesia</h1>
+                <p>Pulau yang indah dengan gunung rinjani yang tinggi, pasir putih yang indah dan wisata desa yang mencerminkan kegiatan tradisonal susku sasak</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Layanan</h1>
+    </section>
+    <div class="warp">
+        <footer class="footer">
+            <div class="foter-col">Logo</div>
+            <div class="foter-col">Tentang </div>
+            <div class="foter-col">Media Sosial</div>
+        </footer>
+    </div>
+
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                    $(this).find('a').html("<i class='fas fa-bars'></i>");
+                }else{
+                    $(".item").addClass("active");
+                    $(this).find("a").html("<i class='fas fa-times'></i>");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
